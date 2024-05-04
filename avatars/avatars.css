@@ -1,11 +1,11 @@
 /* 왼쪽 오른쪽 간격 자유 */
 
-h1{
-  display: none
+h1 {
+  display: none;
 }
 /* 메인 */
 
-.container {
+.main {
   width: 340px; /*박스 사이즈 설정 */
   height: 166px; /* 높이 설정 */
   margin: 230px 530px; /* 가운데 정렬 */
@@ -61,15 +61,17 @@ h1{
 @supports (display: flex) {
   .main {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
   }
 
-  li:nth-child(n + 2) {
-    margin-left: 0;
+  .group {
+    margin-left: 0px;
   }
-
-  .faces3 {
+  .group2 {
     order: -1;
+  }
+  .man-btn {
+    margin-top: 0px;
   }
 }
