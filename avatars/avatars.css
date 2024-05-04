@@ -1,12 +1,6 @@
-/* 왼쪽 오른쪽 간격 자유 */
-
-h1 {
-  display: none;
-}
 /* 메인 */
-
 .main {
-  width: 340px; /*박스 사이즈 설정 */
+  width: 500px; /*박스 사이즈 설정 */
   height: 166px; /* 높이 설정 */
   margin: 230px 530px; /* 가운데 정렬 */
   display: flow-root;
@@ -20,14 +14,8 @@ h1 {
   margin: 10px;
 }
 
-.group1,
-.group2 {
-  position: relative;
-}
-
 .woman-btn,
 .man-btn {
-  display: flow-root;
   width: 340px;
   height: 83px;
   position: absolute;
@@ -62,15 +50,12 @@ h1 {
   .main {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
   }
 
-  .group {
-    margin-left: 0px;
-  }
   .group2 {
     order: -1;
   }
+  
   .man-btn {
     margin-top: 0px;
   }
