@@ -1,6 +1,75 @@
 /* 왼쪽 오른쪽 간격 자유 */
-main {
-  padding: 0 300px;
+
+h1{
+  display: none
 }
-.avatar-wrap1 {
+/* 메인 */
+
+.container {
+  width: 340px; /*박스 사이즈 설정 */
+  height: 166px; /* 높이 설정 */
+  margin: 230px 530px; /* 가운데 정렬 */
+  display: flow-root;
+}
+
+.img {
+  width: 63px;
+  height: 63px;
+  border-radius: 70%;
+  float: left;
+  margin: 10px;
+}
+
+.group1,
+.group2 {
+  position: relative;
+}
+
+.woman-btn,
+.man-btn {
+  display: flow-root;
+  width: 340px;
+  height: 83px;
+  position: absolute;
+}
+
+.man-btn {
+  margin-top: 83px;
+}
+
+.off-btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  border: 1px solid #eaeaea;
+  float: left;
+  margin: 55px 13px 0px 55px;
+}
+
+.on-btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #4cfe88;
+  border: 1px solid #eaeaea;
+  float: left;
+  margin: 55px 13px 0px 55px;
+}
+
+/* flex 지원 환경 */
+@supports (display: flex) {
+  .main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  li:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .faces3 {
+    order: -1;
+  }
 }
