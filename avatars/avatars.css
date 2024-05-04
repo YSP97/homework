@@ -1,14 +1,13 @@
 /* 메인 */
 .main {
-  width: 500px;
+  width: 340px;
   height: 166px;
   margin: 230px 530px;
-  display: flow-root;
 }
 
 .img {
-  width: 63px;
-  height: 63px;
+  width: 64px;
+  height: 64px;
   border-radius: 70%;
   float: left;
   margin: 10px;
