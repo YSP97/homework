@@ -1,8 +1,8 @@
 /* 메인 */
 .main {
-  width: 500px; /*박스 사이즈 설정 */
-  height: 166px; /* 높이 설정 */
-  margin: 230px 530px; /* 가운데 정렬 */
+  width: 500px;
+  height: 166px;
+  margin: 230px 530px;
   display: flow-root;
 }
 
