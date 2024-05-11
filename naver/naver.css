@@ -1,0 +1,202 @@
+/* sr-only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 초기 설정 */
+body {
+  margin: 0;
+}
+
+/* 로고 */
+.logo {
+  display: flex;
+  justify-content: center;
+  /* 80px/16px */
+  margin-top: 5rem;
+}
+
+/* 로그인 박스 */
+.login-box {
+  --side-margin: 1.25rem;
+  --main-color: #03cf5d;
+  --form-size: 500px;
+  /* 양 쪽 여백, 폼 세로길이 */
+  margin: 0 var(--side-margin);
+  padding: 0 0 10px 0;
+
+  .login-input-group {
+    width: 100%;
+  }
+
+  .login-form {
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .form-input {
+      width: 100%;
+      display: flex;
+    }
+
+    input {
+      --input-text-size: 0.875rem;
+      --input-size: 2.8125rem;
+      --input-gap: 0.625rem;
+      --input-box-gap: 0.625rem;
+      --input-border-color: #dadada;
+      --input-basic-color: #fff;
+      --input-focus-color: #e9f0fd;
+
+      border: 1px solid var(--input-border-color);
+      background-color: var(--input-basic-color);
+      font-size: var(--input-text-size);
+      width: 100%;
+      display: flex;
+      padding: 0 0 0 var(--input-gap);
+      height: var(--input-size);
+      block-size: var(--input-size);
+      margin-top: var(--input-box-gap);
+      flex-wrap: wrap;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input:focus-within {
+      border: 1px solid var(--main-color);
+      background-color: var(--input-focus-color);
+    }
+
+    /* 로그인 버튼 */
+    .login-btn {
+      --btn-height: 45px;
+
+      background-color: var(--main-color);
+      padding: 0.75rem;
+      /* 12/16 =  0.75rem*/
+      display: flex;
+      margin: 1.25rem 0 0.625rem 0;
+      /* 10px/16px = 0.625rem */
+      /* 20px/16px = 1.25 rem*/
+      color: #fff;
+      border: none;
+      width: 100%;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      height: var(--btn-height);
+      block-size: var(--btn-height);
+    }
+  }
+}
+
+/* 체크박스 */
+
+/* 로그인 정보 저장, ip */
+.user-service {
+  --text-size: 1rem;
+  --ip-text-color: #181818;
+  --input-focus-color: #24388d;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  width: 100%;
+  text-transform: uppercase;
+  .form-checkbox {
+    position: relative;
+
+    input {
+      position: absolute;
+      appearance: none;
+    }
+
+    label {
+      display: block;
+      --icon-size: 1.5rem;
+      background: url(./icons/unchecked.svg) no-repeat 0 0 / contain;
+      /* 24px(배경이미지길이)+5px(간격)=29px */
+      /* 29px/16px = 1.8125rem */
+      padding-left: 1.8125rem;
+      height: 1.5rem;
+      background-size: var(--icon-size) var(--icon-size);
+      font-size: 1rem;
+    }
+
+    input:checked + label {
+      background-image: url(./icons/checked.svg);
+    }
+  }
+
+  /* 마우스 접근 시 아웃라인 없게 */
+  input:focus {
+    outline: none;
+  }
+
+  /* 키보드 접근 시 아웃라인 있도록 */
+  input:focus-visible {
+    --focus-box-size: 1.5rem;
+    border: 2px solid var(--input-focus-color);
+    border-radius: 10%;
+    width: var(--focus-box-size);
+    inline-size: var(--focus-box-size);
+    height: var(--focus-box-size);
+    block-size: var(--focus-box-size);
+    margin-left: -0.001rem;
+    margin-top: -0.001rem;
+  }
+
+  a {
+    text-decoration-line: none;
+    font-size: var(--text-size);
+    color: var(--ip-text-color);
+    padding: 0;
+  }
+
+  .on-off-btn {
+    border: none;
+    background-color: transparent;
+    font-size: var(--text-size);
+    text-transform: uppercase;
+    padding: 0;
+  }
+}
+
+.security-service {
+  display: none;
+  gap: 5px;
+}
+
+/* 780px 이상 디바이스 */
+@media (min-width: 780px) {
+  .login-form {
+    display: flex;
+    width: var(--form-size);
+    margin: 0 auto;
+  }
+
+  .user-service {
+    display: flex;
+    width: var(--form-size);
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .security-service {
+    display: flex;
+  }
+}
