@@ -80,12 +80,12 @@ CSS로 배경을 투명하게 바꾸기, 폰트 사이즈를 16px로 바꾸고 �
 
 ### 문제2
 
-![크롬에서 에러](image-2.png)
-콘솔 내에서 자꾸 ERR_FILE_NOT_FOUND 에러가 발생했다.
-![파이어폭스](image-3.png)
+![크롬에서 에러](image-2.png)</br>
+콘솔 내에서 자꾸 ERR_FILE_NOT_FOUND 에러가 발생했다.</br>
+![파이어폭스](image-3.png)</br>
 그런데 이것도 파이어폭스에서는 문제가 발생하지 않았다. 크롬 내에서의 문제일 것 같아서 열심히 구글링 해보았다.
-
-![오류 해결](image-6.png)
-찾아보니, 이는 크롬 확장 프로그램으로 인한 오류이며 확장 프로그램을 모두 꺼두었더니 위의 사진처럼 해결되었다. 야호ㅎㅎ
+</br>
+![오류 해결](image-6.png)</br>
+찾아보니, 이는 크롬 확장 프로그램으로 인한 오류이며 확장 프로그램을 모두 꺼두었더니 위의 사진처럼 해결되었다. 야호ㅎㅎ</br>
 
 [출처](https://kinsta.com/knowledgebase/err_file_not_found/#3-ways-to-fix-the-err_file_not_found-error)
