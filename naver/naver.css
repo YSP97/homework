@@ -32,11 +32,6 @@ body {
   --form-size: 500px;
   /* 양 쪽 여백, 폼 세로길이 */
   margin: 0 var(--side-margin);
-  padding: 0 0 10px 0;
-
-  .login-input-group {
-    width: 100%;
-  }
 
   .login-form {
     fieldset {
@@ -47,7 +42,6 @@ body {
     }
 
     .form-input {
-      width: 100%;
       display: flex;
     }
 
@@ -64,12 +58,10 @@ body {
       background-color: var(--input-basic-color);
       font-size: var(--input-text-size);
       width: 100%;
-      display: flex;
       padding: 0 0 0 var(--input-gap);
       height: var(--input-size);
       block-size: var(--input-size);
       margin-top: var(--input-box-gap);
-      flex-wrap: wrap;
     }
 
     input:focus {
@@ -113,7 +105,7 @@ body {
   --input-focus-color: #24388d;
 
   display: flex;
-  flex-flow: row nowrap;
+  /* flex-flow: row nowrap;  */
   justify-content: right;
   width: 100%;
   text-transform: uppercase;
@@ -126,8 +118,9 @@ body {
     }
 
     label {
-      display: block;
       --icon-size: 1.5rem;
+
+      display: block;
       background: url(./icons/unchecked.svg) no-repeat 0 0 / contain;
       /* 24px(배경이미지길이)+5px(간격)=29px */
       /* 29px/16px = 1.8125rem */
@@ -184,13 +177,11 @@ body {
 /* 780px 이상 디바이스 */
 @media (min-width: 780px) {
   .login-form {
-    display: flex;
     width: var(--form-size);
     margin: 0 auto;
   }
 
   .user-service {
-    display: flex;
     width: var(--form-size);
     margin: 0 auto;
     justify-content: space-between;
