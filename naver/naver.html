@@ -9,10 +9,10 @@
         const target = document.querySelector('#onOffBtn');
         if (target.value === 'off') {
           target.value = 'on';
-          target.style.color = '#03cf5d';
+          target.style.color = 'var(--main-color)';
         } else {
           target.value = 'off';
-          target.style.color = '#181818';
+          target.style.color = 'var(--ip-text-color)';
         }
       }
     </script>
@@ -23,8 +23,8 @@
       <!-- 로고 이미지 -->
       <h1 class="logo">
         <a href="https://www.naver.com/">
-          <img src="./logo.svg" alt="네이버"
-          onerror="this.src='./logo.png'"/></a>
+          <img src="./logo.svg" alt="네이버" onerror="this.src='./logo.png'"
+        /></a>
       </h1>
       <!-- 로그인 폼 -->
       <form action="/" class="login-form">
@@ -67,12 +67,11 @@
         <div class="security-service">
           <a href="./ip_security.html" class="ip-link">ip 보안</a>
           <input
-            type="button"
-            value="off"
+            type="checkbox"
             class="on-off-btn"
             id="onOffBtn"
-            onclick="onOffHandler()"
           />
+          <label for="onOffBtn">off</label>
         </div>
       </div>
     </section>

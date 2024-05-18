@@ -160,12 +160,8 @@ body {
     padding: 0;
   }
 
-  .on-off-btn {
-    border: none;
-    background-color: transparent;
-    font-size: var(--text-size);
-    text-transform: uppercase;
-    padding: 0;
+  .on-off-btn{
+    
   }
 }
 
