@@ -1,7 +1,9 @@
 # homework
 
 테킷 프론트엔드 스쿨 10기 과제 저장소</br>
+## Avatar 과제
 [아바타 과제로 이동](./avatars/avatars.md)<br>
+## Naver 과제
 [네이버 과제로 이동](./naver/naver.md)<br>
 
 ## Apple 과제
@@ -13,13 +15,13 @@
 
 ### 결과
 
-## 작은화면 결과
+#### <span style="background-color:#fff5b1">작은화면 결과</span>
 
 </br>
 
 ![small_result](https://github.com/YSP97/homework/assets/140301763/28a0f10e-1ae9-4784-8b73-5af023c846e4)
 
-### 큰화면 결과
+#### <span style="background-color:#fff5b1">큰화면 결과</span>
 
 </br>
 
